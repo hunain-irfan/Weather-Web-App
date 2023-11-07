@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
- 
+
     /* transform: scale(0.96); */
 }
 
@@ -70,7 +70,7 @@ body {
     color: #859aef;
 }
 
-.temp-img{
+.temp-img {
     font-size: 100px;
     color: #cfcfcf;
     width: auto;
@@ -99,11 +99,12 @@ body {
     font-weight: 200;
 }
 
-.temp-text h3{
+.temp-text h3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #temperature-info {
     font-size: 15px;
     position: absolute;
@@ -163,7 +164,8 @@ body {
     transition: 0.7s;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.meters:hover{
+
+.meters:hover {
     transform: scale(1);
     cursor: pointer;
 }
@@ -180,45 +182,54 @@ body {
     text-align: start;
     margin-top: 22px;
     margin-left: 12px;
+    padding-right: 10px;
 }
 
-.meters span{
+.heading-right {
+    display: flex;
+}
+
+.meters span {
     font-size: 30px;
 }
 
-.meters p{
+.meters p {
     font-size: 15px;
 }
 
-.meters h2{
+.meters h2 {
     font-size: 22px;
     font-weight: 500;
 }
 
-p .sun-rise-meter{
+p .sun-rise-meter {
     font-size: 21px;
-    padding-left:17px;
+    padding-left: 17px;
 }
-p .sun-set-meter{
-    font-size: 21px;
-    padding-left: 24px;
 
-}
-p .moon-rise-meter{
-    font-size: 21px;
-    padding-left:17px;
-}
-p .moon-set-meter{
+p .sun-set-meter {
     font-size: 21px;
     padding-left: 24px;
 
 }
 
-@media only screen and (max-width:600px){
-    body{
+p .moon-rise-meter {
+    font-size: 21px;
+    padding-left: 17px;
+}
+
+p .moon-set-meter {
+    font-size: 21px;
+    padding-left: 24px;
+
+}
+
+@media only screen and (max-width:600px) {
+    body {
         background-color: white;
     }
-    .container{
+
+    .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -227,15 +238,80 @@ p .moon-set-meter{
         /* margin: 0 auto; */
     }
 
-    .right{
+    .right {
         width: 100%;
         border-radius: 0;
     }
-    .left{
+
+    .left {
         width: 100%;
         border-radius: 0;
     }
+
+
+
+    .temp-img {
+        height: 196px;
+        margin-bottom: 45px;
+        margin-top: 25px;
+    }
+
+    #temperature-info {
+        transform: scale(1.9);
+        margin-top: 52px;
+
+    }
+
+    .temp-cel {
+        display: flex;
+        transform: scale(1.8);
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .search-bar i {
+        font-size: 42px;
+        color: black;
+    }
+
+    .search-bar input {
+        font-size: 30px;
+    }
+
+    .search-bar {
+        width: 445px;
+    }
+
+    .temperature {
+        margin-bottom: 94px;
+    }
+
+    .date-info {
+        transform: scale(1.8);
+        margin-top: 109px;
+        padding: 40px 0;
+    }
+
+    .city-name {
+        transform: scale(1.9);
+        margin: 59px 0;
+    }
+    .meters{
+        transform: scale(1.5);
+        margin: 50px 0;
+    }
+    .card{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction:column ;
+    }
+    .heading-right{
+        margin-bottom: 20px;
+    }
+
 }
+
 
 
 
